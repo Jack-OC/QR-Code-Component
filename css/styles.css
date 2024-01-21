@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --primary-font: Outfit, sans-serif;
+
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    --container-width: 320px;
+
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+p, h1 {
+    overflow-wrap: break-word;
+}
+
+p {
+    line-height: 1.2rem;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: var(--fw-regular);
+    color: var(--GrayishBlue);
+    font-size: 0.938rem;
+    background-color: var(--LightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.qr-card {
+    max-width: var(--container-width);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 1rem;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.qr-card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.qr-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 90%;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: var(--fw-bold);
+    color: var(--DarkBlue);
+}
+
+.qr-card p {
+    font-size: 1rem;
+}
